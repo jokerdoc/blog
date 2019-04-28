@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装YApi | 九林个人博客</title>
+    <meta name="description" content="技术分享 | 学习成长">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.c056ffe0.css" as="style"><link rel="preload" href="/blog/assets/js/app.46f90e75.js" as="script"><link rel="preload" href="/blog/assets/js/2.58c33e06.js" as="script"><link rel="preload" href="/blog/assets/js/12.0aaf69f4.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.92405363.js"><link rel="prefetch" href="/blog/assets/js/11.6286c4f5.js"><link rel="prefetch" href="/blog/assets/js/13.00770887.js"><link rel="prefetch" href="/blog/assets/js/3.1991a0c4.js"><link rel="prefetch" href="/blog/assets/js/4.aad5df96.js"><link rel="prefetch" href="/blog/assets/js/5.e9073713.js"><link rel="prefetch" href="/blog/assets/js/6.678da8c0.js"><link rel="prefetch" href="/blog/assets/js/7.a3a95f72.js"><link rel="prefetch" href="/blog/assets/js/8.3e3e579c.js"><link rel="prefetch" href="/blog/assets/js/9.6a5fb783.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.c056ffe0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">九林个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/about.html" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/about.html" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>环境部署</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/article/sys/nodejs.html" class="sidebar-link">安装nodejs</a></li><li><a href="/blog/article/sys/mongodb.html" class="sidebar-link">安装MongoDB</a></li><li><a href="/blog/article/sys/redis.html" class="sidebar-link">安装Redis</a></li><li><a href="/blog/article/sys/yapi.html" class="active sidebar-link">安装YApi</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/article/sys/pm2.html" class="sidebar-link">安装pm2及使用</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="安装yapi"><a href="#安装yapi" aria-hidden="true" class="header-anchor">#</a> 安装YApi</h1> <h3 id="环境准备"><a href="#环境准备" aria-hidden="true" class="header-anchor">#</a> 环境准备</h3> <ul><li>操作系统：CentOS 7</li> <li>环境:
+<ul><li><a href="/blog/article/sys/nodejs">安装nodejs</a></li> <li><a href="/blog/article/sys/mongodb">安装Mongodb</a></li></ul></li></ul> <h3 id="安装git"><a href="#安装git" aria-hidden="true" class="header-anchor">#</a> 安装git</h3> <p>官方推荐，在内网部署的时候安装git，可以根据自己所需安装</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yum -y <span class="token function">install</span> <span class="token function">git</span>
+</code></pre></div><h3 id="搭建yapi环境"><a href="#搭建yapi环境" aria-hidden="true" class="header-anchor">#</a> 搭建YApi环境</h3> <p>准备环境搭建完成后，开始搭建YApi，安装命令</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -g yapi-cli --registry https://registry.npm.taobao.org
+</code></pre></div><p>启动可视化部署程序</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yapi server
+</code></pre></div><h3 id="end"><a href="#end" aria-hidden="true" class="header-anchor">#</a> --END--</h3></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/article/sys/redis.html" class="prev">
+          安装Redis
+        </a></span> <span class="next"><a href="/blog/article/sys/pm2.html">
+          安装pm2及使用
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.46f90e75.js" defer></script><script src="/blog/assets/js/2.58c33e06.js" defer></script><script src="/blog/assets/js/12.0aaf69f4.js" defer></script>
+  </body>
+</html>
